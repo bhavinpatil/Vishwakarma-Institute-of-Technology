@@ -1,0 +1,21 @@
+main()
+{
+M->char[100][4]
+R->char[4]
+IR->char[4]
+IC->int
+C->int
+Buffer->char[41]
+}
+
+
+LOAD
+m <- 0
+While not e-o-f
+Read next card from input file and store into a buffer
+Control card: $AMJ, INIT() //will clear the 2-Dimensional array
+	      $DTA, STARTEXECUTION() 
+	      $END, end-while
+Program card: Store buffer data in memory location m through m+9
+
+

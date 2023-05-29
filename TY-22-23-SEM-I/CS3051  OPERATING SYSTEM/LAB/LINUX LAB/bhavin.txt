@@ -1,0 +1,1000 @@
+   48  sudo apt install libasound2-dev mesa-common-dev libx11-dev libxrandr-dev libxi-dev xorg-dev libgl1-mesa-dev libglu1-mesa-dev
+   49  exit
+   50  make
+   51  ./main 
+   52  cd
+   53  cd Downloads/
+   54  cd raylib/
+   55  cd src/
+   56  make PLATFORM=PLATFORM_DESKTOP RAYLIB_LIBTYPE=SHARED
+   57  sudo make install RAYLIB_LIBTYPE=SHARED
+   58  gcc --version
+   59  sudo apt install build-essential
+   60  gcc --version
+   61  g++ --version
+   62  sudo apt install gcc
+   63  sudo apt install g++
+   64  sudo apt update
+   65  sudo apt upgrade
+   66  sudo apt autoremove
+   67  sudo apt install vlc
+   68  sudo nano .bashrc 
+   69  exit
+   70  pwd
+   71  exit
+   72  which flutter
+   73  flutter --version
+   74  sudo nano .bashrc 
+   75  exit
+   76  nano edit.txt4
+   77  exit
+   78  cat .bashrc 
+   79  code .
+   80  exit
+   81  ./studio.sh 
+   82  sudo gcc main.cpp -o main
+   83  sudo apt install build-essential
+   84  sudo apt install gcc
+   85  code .
+   86  sudo apt install cherrytree
+   87  exit
+   88  code .
+   89  ./sudokuSolver
+   90  ranger
+   91  sudo apt install ranger
+   92  ranger
+   93  trash-list
+   94  sudo apt install trash-cli
+   95  trash-list
+   96  pfetch
+   97  ifetch
+   98  htop
+   99  ncdu
+  100  sudo apt install ncdu
+  101  ncdu
+  102  hollywood
+  103  sudo apt install hollywood
+  104  hollywood
+  105  /usr/bin/hollywood 
+  106  code .
+  107  ./sparseMatrix 
+  108  ./additionOfMatrix 
+  109  coe .
+  110  code .
+  111  ./additionOfSparseMatrices 
+  112  code .
+  113  ./sudokuSolver
+  114  htop
+  115  sudo apt install todoist
+  116  code .
+  117  cd Temp
+  118  nano file.cpp
+  119  gcc file.cpp -o file
+  120  cd Dev/
+  121  ls
+  122  ct edit.txt4 
+  123  cat edit.txt4 
+  124  ls
+  125  cd android-studio/
+  126  ls
+  127  cd bin/
+  128  ls
+  129  ./studio.sh 
+  130  sudo apt update
+  131  sudo apt upgrade
+  132  sudo apt autoremove
+  133  bpytop
+  134  sudo apt install bpytop
+  135  bpytop 
+  136  code .
+  137  sudo apt install pcap*
+  138  sudo apt update
+  139  .\vcpkg install pcapplusplus
+  140  git clone https://github.com/Microsoft/vcpkg.git
+  141  cd Downloads/
+  142  ls
+  143  cd vcpkg/
+  144  ls
+  145  ./bootstrap-vcpkg.sh 
+  146  .\vcpkg install libpcap
+  147  cd ..
+  148  .\vcpkg install libpcap
+  149  sudo apt udpdate
+  150  sudo apt update
+  151  nano ath.cpp
+  152  g++ ath.cpp 
+  153  code .
+  154  .\vcpkg install libpcap
+  155  gcc --make ath.cpp 
+  156  make
+  157  gcc make ath.cpp 
+  158  .\vcpkg install libpcap
+  159  .\vcpkg install pcapplusplus
+  160  cd /opt/
+  161  ls
+  162  exit
+  163  sudo apt0-get install pcap* 
+  164  sudo apt-get install pcap* 
+  165  gcc ath.cpp 
+  166  git clone https://github.com/Microsoft/vcpkg.git
+  167  ./vcpkg/bootstrap-vcpkg.sh 
+  168  vcpkg install pcap
+  169  .\vcpkg install libpcap
+  170  code .
+  171  vcpkg install pcapplusplus
+  172  sudo vcpkg install pcapplusplus
+  173  sudo apt-get install bison
+  174  sudo vcpkg install pcapplusplus
+  175  sudo apt-get install flex
+  176  cd whatsapp/
+  177  sudo vcpkg install pcapplusplus
+  178  gcc ath.cpp 
+  179  g++ ath.cpp 
+  180  cd whatsapp/
+  181  code .
+  182  cd ..
+  183  code .
+  184  sudo apt update
+  185  sudo apt install -y zip unzip
+  186  sudo apt install -y build-essential pkg-config
+  187  cd Downloads/
+  188  wget -O vcpkg.tar.gz https://github.com/microsoft/vcpkg/archive/master.tar.gz
+  189  [200~sudo mkdir /opt/vcpkg
+  190  sudo mkdir /opt/vcpkg
+  191  ls
+  192  sudo mkdir /opt/vcpkg
+  193  ls
+  194  ls -a
+  195  sudo tar xf vcpkg.tar.gz --strip-components=1 -C /opt/vcpkg
+  196  sudo /opt/vcpkg/bootstrap-vcpkg.sh
+  197  sudo ln -s /opt/vcpkg/vcpkg /usr/local/bin/vcpkg
+  198  vcpkg version
+  199  rm -rf vcpkg.tar.gz
+  200  sudo vcpkg install zlib:x64-linux
+  201  sudo vcpkg list
+  202  .\vcpkg install libpcap
+  203  cd
+  204  .\vcpkg install libpcap
+  205  vcpkg install libpcap
+  206  sudo vcpkg install libpcap
+  207  vcpkg update
+  208  git pull
+  209  sudo apt-get install libpcap-dev
+  210  cd Dev/
+  211  ls
+  212  cd android-studio/
+  213  cd bin/
+  214  ls
+  215  ./studio.sh 
+  216  code .
+  217  ./sudokuSolver
+  218  code .
+  219  ./main 
+  220  cd "/home/bhavin/Temp/os/assignment/" && g++ main.cpp -o main && "/home/bhavin/Temp/os/assignment/"main
+  221  ./main 
+  222  cd Dev/cd Android/
+  223  cd Dev/android-studio/
+  224  cd bin/
+  225  ls
+  226  ./studio.sh 
+  227  cd "/home/bhavin/Temp/practiceProblem/" && g++ problem1.cpp -o problem1 && "/home/bhavin/Temp/practiceProblem/"problem1
+  228  cd "/home/bhavin/Temp/practiceProblem/" && g++ s.cpp -o s && "/home/bhavin/Temp/practiceProblem/"s
+  229  cd "/home/bhavin/Temp/practiceProblem/" && g++ problem1.cpp -o problem1 && "/home/bhavin/Temp/practiceProblem/"problem1
+  230  cd Temp
+  231  ls
+  232  code .
+  233  cd "/home/bhavin/Documents/GitHub/Data-Structure-and-Algorithms/Matrices/" && g++ sparseMatrixClass.cpp -o sparseMatrixClass && "/home/bhavin/Documents/GitHub/Data-Structure-and-Algorithms/Matrices/"sparseMatrixClass
+  234  cd "/home/bhavin/Documents/GitHub/Data-Structure-and-Algorithms/Matrices/" && g++ additionOfSparseMatrices.cpp -o additionOfSparseMatrices && "/home/bhavin/Documents/GitHub/Data-Structure-and-Algorithms/Matrices/"additionOfSparseMatrices
+  235  cd "/home/bhavin/Documents/GitHub/Data-Structure-and-Algorithms/Matrices/" && g++ tempCodeRunnerFile.cpp -o tempCodeRunnerFile && "/home/bhavin/Documents/GitHub/Data-Structure-and-Algorithms/Matrices/"tempCodeRunnerFile
+  236  cd "/home/bhavin/Documents/GitHub/Data-Structure-and-Algorithms/Matrices/" && g++ additionOfSparseMatrices.cpp -o additionOfSparseMatrices && "/home/bhavin/Documents/GitHub/Data-Structure-and-Algorithms/Matrices/"additionOfSparseMatrices
+  237  code .
+  238  nano file.cpp
+  239  cd "/home/bhavin/Temp/practiceProblem/" && g++ problem1.cpp -o problem1 && "/home/bhavin/Temp/practiceProblem/"problem1
+  240  bpytop
+  241  code .
+  242  cd "/home/bhavin/Documents/GitHub/Data-Structure-and-Algorithms/Matrices/" && g++ polynomial.cpp -o polynomial && "/home/bhavin/Documents/GitHub/Data-Structure-and-Algorithms/Matrices/"polynomial
+  243  sudo apt install
+  244  sudo apt update
+  245  sudo apt upgrade
+  246  bpytop
+  247  sudo apt update
+  248  code .
+  249  cd "/home/bhavin/Documents/GitHub/Artigficial-Intelligence-Problems/Contraint Satisfaction Problem/" && g++ sudokuSolver.cpp -o sudokuSolver && "/home/bhavin/Documents/GitHub/Artigficial-Intelligence-Problems/Contraint Satisfaction Problem/"sudokuSolver
+  250  sudo apt update
+  251  sudo apt upgrade
+  252  route -n
+  253  sudo apt install net-tools
+  254  route -n
+  255  exit
+  256  iptraf
+  257  sudo apt install iptraf
+  258  iptraf
+  259  sudo iptraf
+  260  sudo apt install iftop
+  261  sudo iftop
+  262  wget https://d1uj6qtbmh3dt5.cloudfront.net/NICE-GPG-KEY
+  263  gpg --import NICE-GPG-KEY
+  264  wget https://d1uj6qtbmh3dt5.cloudfront.net/2022.1/Servers/nice-dcv-2022.1-13300-ubuntu2204-x86_64.tgz
+  265  ls
+  266  wget https://d1uj6qtbmh3dt5.cloudfront.net/nice-dcv-ubuntu2204-x86_64.tgz
+  267  ls
+  268  cd QUIC/
+  269  ls
+  270  tar -xvzf nice-dcv-2022.1-13300-ubuntu1804-x86_64.tgz && cd nice-dcv-2022.1-13300-ubuntu1804-x86_64
+  271  tar -xvzf nice-dcv-2022.1-13300-ubuntu2204-x86_64.tgz && cd nice-dcv-2022.1-13300-ubuntu2204-x86_64
+  272  ls
+  273  tar -xvzf nice-dcv-2022.1-13300-ubuntu2204-x86_64.tgz && cd nice-dcv-ubuntu2204-x86_64
+  274  tar -xvzf nice-dcv-ubuntu2204-x86_64.tgz && cd nice-dcv-2022.1-13300-ubuntu2204-x86_64
+  275  ls
+  276  sudo apt install ./nice-dcv-server_2022.1.13300-1_amd64.ubuntu2204.deb 
+  277  git clone --depth 1 -b quic-draft-14 https://github.com/tatsuhiro-t/openssl
+  278  cd openssl/
+  279  ./config enable-tlsl_3 --prefix=$PWD/build
+  280  ./config enable-tls1_3 --prefix=$PWD/build
+  281  make
+  282  make install_sw
+  283  cd ..
+  284  ls
+  285  git clone -b quic-draft-14 https://github.com/cloudflare/ngtcp2
+  286  cd ngtcp2/
+  287  autoreconf -1
+  288  sudo apt install autoconf
+  289  autoreconf -1
+  290  autoreconf -i
+  291  aclocal
+  292  autoconf
+  293  autoconf -i
+  294  autoreconf -i
+  295  ./configure PKG_CONFIG_PATH=$PWD/../openssl/build/lib/pkgconfig LDFLAGS="-Wl,-rpath,$PWD/../openssl/build/lib"
+  296  make check
+  297  ls
+  298  cd ..
+  299  ls
+  300  examples/client cloudflare-quic.com 443 -d cloudflare-quic.req
+  301  cd ngtcp2/
+  302  ls
+  303  examples/client cloudflare-quic.com 443 -d cloudflare-quic.req
+  304  cd examples/
+  305  ls
+  306  examples/client.cc cloudflare-quic.com 443 -d cloudflare-quic.req
+  307  examples/client.h cloudflare-quic.com 443 -d cloudflare-quic.req
+  308  cd ..
+  309  examples/client.cc cloudflare-quic.com 443 -d cloudflare-quic.req
+  310  sudo examples/client.cc cloudflare-quic.com 443 -d cloudflare-quic.req
+  311  echo -ne "GET / HTTP/1.1\r\nHost: cloudflare-quic.com\r\n\r\n" > cloudflare-quic.req
+  312  ls
+  313  cat cloudflare-quic.req 
+  314  examples/client cloudflare-quic.com 443 -d cloudflare-quic.req
+  315  sudo nano /etc/dcv/dcv.conf
+  316  ls
+  317  sudo apt install vsftpd
+  318  sudo systemctl start vsftpd
+  319  sudo systemctl enable vsftpd
+  320  ftp
+  321  exit
+  322  sudo apt update
+  323  git clone https://github.com/litespeedtech/lsquic-tutorial
+  324  cd QUIC/
+  325  ls
+  326  git submodule update --init --recursive
+  327  cd lsquic-tutorial/
+  328  git submodule update --init --recursive
+  329  sudo apt update
+  330  cmake
+  331  cmake .
+  332  submodule update --init --recursive
+  333  git submodule update --init --recursive
+  334  cmake .
+  335  sudo apt install libunwind-generic
+  336  exit
+  337  ifconfig
+  338  sudo add-apt-repository ppa:wireshark-dev/stable
+  339  sudo apt update
+  340  sudo apt install wireshark
+  341  wireshark 
+  342  sudo wireshark 
+  343  sudo apt update
+  344  ifconfig
+  345  exit
+  346  sudo su
+  347  sudo apt install default-jre
+  348  java
+  349  java -v
+  350  java --version
+  351  exit
+  352  ssh root@192.168.0.110
+  353  sudo ssh root@192.168.0.110
+  354  exit
+  355  code .
+  356  cd "/home/bhavin/Documents/GitHub/Sorting-Visualization-Algorithm/" && g++ main.cpp -o main && "/home/bhavin/Documents/GitHub/Sorting-Visualization-Algorithm/"main
+  357  make
+  358  ./main 
+  359  cd QUIC/
+  360  ls
+  361  git clone https://github.com/reactor/reactor-netty.git
+  362  cd reactor-netty/
+  363  ./gradle build
+  364  ./gradlew build
+  365  java
+  366  ssh root@192.168.0.110
+  367  sudo ssh root@192.168.0.110
+  368  ssh
+  369  ssh root
+  370  ssh 192.168.0.110
+  371  ./gradlew build
+  372  sudo apt update
+  373  apt-get
+  374  sudo apt-get autoremove
+  375  sudo apt --fix-broken install
+  376  sudo apt update
+  377  dpkg -i teams_1.5.00.23861_amd64.deb 
+  378  sudo dpkg -i teams_1.5.00.23861_amd64.deb 
+  379  teams
+  380  sudo teams
+  381  sudo code .
+  382  sudo
+  383  teams
+  384  sudo apt install ./teams_1.5.00.23861_amd64.deb 
+  385  sudo teams
+  386  cd ..
+  387  sudo apt purge teams
+  388  teams
+  389  cd Downloads/
+  390  sudo apt-get install ./teams_1.5.00.23861_amd64.deb 
+  391  sudo apt-get update
+  392  sudo apt-get upgrade
+  393  sudo apt-get autoremove
+  394  sudo teams
+  395  teams
+  396  sudo apt purge teams
+  397  teams
+  398  cd Downloads/
+  399  ls
+  400  rm Samsung_SSD_Integrated_Software_Installer.zip 
+  401  ls
+  402  rm How_QUIC_Works_Handshake.zip 
+  403  ls
+  404  rm AppIcons.zip 
+  405  ls
+  406  rm QUICDesignDocumentandSpecificationRational.odt 
+  407  ls
+  408  rm WhatsApp\ Image\ 2022-11-05\ at\ 10.26.49.jpeg 
+  409  ls
+  410  sudo apt install ./teams_1.5.00.23861_amd64.deb 
+  411  ls
+  412  teams
+  413  sudo apt purge teams
+  414  cd Temp
+  415  ls
+  416  nano feb.cpp
+  417  gcc feb -o feb.cpp 
+  418  g++ feb -o feb.cpp 
+  419  code .
+  420  ls
+  421  cd "/home/bhavin/Temp/" && g++ feb.cpp -o feb && "/home/bhavin/Temp/"feb
+  422  cd "/home/bhavin/Temp/" && g++ tay.cpp -o tay && "/home/bhavin/Temp/"tay
+  423  cd "/home/bhavin/Temp/practiceProblem/" && g++ smallest.cpp -o smallest && "/home/bhavin/Temp/practiceProblem/"smallest
+  424  cd Temp
+  425  code .
+  426  cd practiceProblem/
+  427  code .
+  428  cd "/home/bhavin/Temp/os/assignment/" && g++ main.cpp -o main && "/home/bhavin/Temp/os/assignment/"main
+  429  code .
+  430  cd "/home/bhavin/Temp/os/assignment/" && g++ main.cpp -o main && "/home/bhavin/Temp/os/assignment/"main
+  431  make
+  432  ./main 
+  433  code .
+  434  cd Dev/android-studio/bin/
+  435  ls
+  436  ./studio.sh 
+  437  cd Dev/
+  438  cd android-studio/
+  439  cd bin/
+  440  ./studio.sh 
+  441  cd StudioProjects/
+  442  ls
+  443  exit
+  444  git pull
+  445  cd Dev/android-studio/bin/
+  446  ./studio.sh 
+  447  sudo apt update
+  448  sudo apt upgrade
+  449  sudo apt update
+  450  exit
+  451  cd "/home/bhavin/Temp/os/oslab/" && g++ RR.cpp -o RR && "/home/bhavin/Temp/os/oslab/"RR
+  452  cd Temp
+  453  cd os/
+  454  ls
+  455  cd oslab/
+  456  ls
+  457  code .
+  458  nano main.cpp 
+  459  exit
+  460  cd "/home/bhavin/VIT/CS3051  OPERATING SYSTEM/CP/Phase-1/Module-3/" && g++ v1.cpp -o v1 && "/home/bhavin/VIT/CS3051  OPERATING SYSTEM/CP/Phase-1/Module-3/"v1
+  461  code .
+  462  code .
+  463  cd "/home/bhavin/VIT/CS3051  OPERATING SYSTEM/CP/Phase-1/Module-2/" && g++ module2.cpp -o module2 && "/home/bhavin/VIT/CS3051  OPERATING SYSTEM/CP/Phase-1/Module-2/"module2
+  464  code .
+  465  cd "/home/bhavin/VIT/CS3051  OPERATING SYSTEM/CP/Phase-1/Module-3/" && g++ module3.cpp -o module3 && "/home/bhavin/VIT/CS3051  OPERATING SYSTEM/CP/Phase-1/Module-3/"module3
+  466  cd "/home/bhavin/VIT/CS3051  OPERATING SYSTEM/CP/Phase-1/Module-2/" && g++ module2.cpp -o module2 && "/home/bhavin/VIT/CS3051  OPERATING SYSTEM/CP/Phase-1/Module-2/"module2
+  467  cd "/home/bhavin/VIT/CS3051  OPERATING SYSTEM/CP/Phase-1/Module-3/" && g++ module3.cpp -o module3 && "/home/bhavin/VIT/CS3051  OPERATING SYSTEM/CP/Phase-1/Module-3/"module3
+  468  cd "/home/bhavin/VIT/CS3051  OPERATING SYSTEM/CP/Phase-1/Module-3/" && g++ v1.cpp -o v1 && "/home/bhavin/VIT/CS3051  OPERATING SYSTEM/CP/Phase-1/Module-3/"v1
+  469  cd "/home/bhavin/Documents/GitHub/Multiprogramming-Operating-System/Phase-1/Module-2/" && g++ module2.cpp -o module2 && "/home/bhavin/Documents/GitHub/Multiprogramming-Operating-System/Phase-1/Module-2/"module2
+  470  code .
+  471  cd "/home/bhavin/VIT/CS3051  OPERATING SYSTEM/CP/Phase-1/Module-3/" && g++ module3.cpp -o module3 && "/home/bhavin/VIT/CS3051  OPERATING SYSTEM/CP/Phase-1/Module-3/"module3
+  472  cd "/home/bhavin/VIT/CS3051  OPERATING SYSTEM/CP/Phase-1/Module-2/" && g++ module2.cpp -o module2 && "/home/bhavin/VIT/CS3051  OPERATING SYSTEM/CP/Phase-1/Module-2/"module2
+  473  code .
+  474  cd "/home/bhavin/VIT/CS3051  OPERATING SYSTEM/CP/Phase-1/Module-2/" && g++ module2.cpp -o module2 && "/home/bhavin/VIT/CS3051  OPERATING SYSTEM/CP/Phase-1/Module-2/"module2
+  475  cd "/home/bhavin/VIT/CS3051  OPERATING SYSTEM/CP/Phase-1/Module-3/" && g++ module3.cpp -o module3 && "/home/bhavin/VIT/CS3051  OPERATING SYSTEM/CP/Phase-1/Module-3/"module3
+  476  cd "/home/bhavin/VIT/CS3051  OPERATING SYSTEM/CP/Phase-1/Module-2/" && g++ module2.cpp -o module2 && "/home/bhavin/VIT/CS3051  OPERATING SYSTEM/CP/Phase-1/Module-2/"module2
+  477  code .
+  478  cd "/home/bhavin/VIT/CS3051  OPERATING SYSTEM/CP/Phase-1/Module-3/" && g++ module3.cpp -o module3 && "/home/bhavin/VIT/CS3051  OPERATING SYSTEM/CP/Phase-1/Module-3/"module3
+  479  code .
+  480  cd "/home/bhavin/Temp/os/phase2/" && g++ os2.cpp -o os2 && "/home/bhavin/Temp/os/phase2/"os2
+  481  cd "/home/bhavin/Temp/os/phase2/" && g++ os2.h -o os2 && "/home/bhavin/Temp/os/phase2/"os2
+  482  code .
+  483  cd "/home/bhavin/Temp/os/phase2/Phase2/" && gcc phase2.c -o phase2 && "/home/bhavin/Temp/os/phase2/Phase2/"phase2
+  484  code .
+  485  cd "/home/bhavin/VIT/CS3051  OPERATING SYSTEM/CP/Phase-2/Module-1/" && g++ module1.cpp -o module1 && "/home/bhavin/VIT/CS3051  OPERATING SYSTEM/CP/Phase-2/Module-1/"module1
+  486  code .
+  487  cd "/home/bhavin/Documents/GitHub/Multiprogramming-Operating-System/Phase-1/Module-2/" && g++ module2.cpp -o module2 && "/home/bhavin/Documents/GitHub/Multiprogramming-Operating-System/Phase-1/Module-2/"module2
+  488  cd "/home/bhavin/VIT/CS3051  OPERATING SYSTEM/CP/Phase-2/Module-1/" && g++ module1.cpp -o module1 && "/home/bhavin/VIT/CS3051  OPERATING SYSTEM/CP/Phase-2/Module-1/"module1
+  489  gcc tcpcli_2017.c -o client
+  490  ./client 
+  491  gcc tcpcli_2017.c -o client
+  492  ./client 
+  493  gcc tcpsrv_2017.c -o server
+  494  ./server 
+  495  ifconfig
+  496  gcc tcpsrv_2017.c -o server
+  497  ./server 
+  498  sudo apt update
+  499  sudo apt install pavucontrol
+  500  sudo apt update
+  501  sudo apt upgrade
+  502  cd Dev/android-studio/bin/
+  503  ls
+  504  ./studio.sh
+  505  code .
+  506  cd StudioProjects/
+  507  git clone https://github.com/londonappbrewery/flash-chat-flutter.git
+  508  cd Temp
+  509  git clone https://github.com/rajayogan/flutter-googlemaps-nearbyplaces.git
+  510  exit
+  511  cd Dev/android-studio/bin/
+  512  ./studio.sh 
+  513  cd Dev/android-studio/bin/
+  514  ./studio.sh 
+  515  sudo wireshark
+  516  cd Temp/cn/cp/
+  517  ls
+  518  cd quiche4j/
+  519  ls
+  520  ./http3-client.sh https://quic.tech:8443
+  521  cd Temp/cn/
+  522  ls
+  523  clear
+  524  ls
+  525  mkdir cp
+  526  cd cp/
+  527  git clone https://github.com/kachayev/quiche4j
+  528  ls
+  529  cd quiche4j/
+  530  ls
+  531  mvn clean install
+  532  sudo apt install maven
+  533  mvn clean install
+  534  ls
+  535  ./http3-server.sh :4433
+  536  cd Dev/android-studio/bin/
+  537  ./studio.sh
+  538  code .
+  539  sudo apt update
+  540  sudo apt upgrade
+  541  sudo apt update
+  542  code .
+  543  cd "/home/bhavin/Temp/os/osphase2/Phase2/" && gcc phase2.c -o phase2 && "/home/bhavin/Temp/os/osphase2/Phase2/"phase2
+  544  cd "/home/bhavin/VIT/CS3051  OPERATING SYSTEM/CP/Phase-2/Module-1/" && g++ module1.cpp -o module1 && "/home/bhavin/VIT/CS3051  OPERATING SYSTEM/CP/Phase-2/Module-1/"module1
+  545  java -version
+  546  java --versino
+  547  java --versionn
+  548  java --version
+  549  sha256sum OpenJDK17U-jdk_x64_linux_hotspot_17.0.5_8.tar.gz 
+  550  tar xvzf OpenJDK17U-jdk_x64_linux_hotspot_17.0.5_8.tar.gz -C /opt
+  551  sudo tar xvzf OpenJDK17U-jdk_x64_linux_hotspot_17.0.5_8.tar.gz -C /opt
+  552  export JAVA_HOME=/opt/jdk-17.0.5
+  553  export PATH=$PATH:$JAVA_HOME/bin
+  554  echo $JAVA_HOME
+  555  java -version
+  556  sudo apt update
+  557  sudo apt upgrade
+  558  sudo apt autoremove
+  559  java -version
+  560  exut
+  561  exit
+  562  ifconig
+  563  ipconfig
+  564  ifconfig
+  565  netstat
+  566  ssh root@198.168.0.109 -p 80
+  567  ssh root@198.168.0.109 -p 443
+  568  apt install openjdk-17-jdk openjdk-17-jre
+  569  sudo apt install openjdk-17-jdk openjdk-17-jre
+  570  java -version
+  571  sudo apt update
+  572  sudo apt upgrade
+  573  exit
+  574  sudo nmap localhost
+  575  sudo apt install nmap
+  576  sudo apt update
+  577  sudo nmap localhost
+  578  sudo nmap -p 21 localhost
+  579  exit
+  580  ./http3-client.sh 
+  581  ./http3-server.sh 
+  582  cd "/home/bhavin/Temp/cn/cp/quiche4j/quiche4j-examples/src/main/java/io/quiche4j/examples/" && javac Http3Client.java && java Http3Client
+  583  cd "/home/bhavin/Temp/cn/cp/quiche4j/quiche4j-examples/src/main/java/io/quiche4j/examples/" && javac Http3Server.java && java Http3Server
+  584  cd "/home/bhavin/Temp/cn/cp/quiche4j/quiche4j-examples/src/main/java/io/quiche4j/examples/" && javac Http3NettyClient.java && java Http3NettyClient
+  585  ./http3-netty-client.sh 
+  586  ./http3-netty-client.sh quiche4j-examples/src/main/java/io/quiche4j/examples/Http3NettyClient.java 
+  587  ./http3-client.sh quiche4j-examples/src/main/java/io/quiche4j/examples/Http3Client.java 
+  588  ./http3-netty-client.sh quiche4j-examples/src/main/java/io/quiche4j/examples/Http3NettyClient.java 
+  589  exit
+  590  exit
+  591  xit
+  592  exit
+  593  xit
+  594  exit
+  595  ifconfig
+  596  code .
+  597  cd Temp
+  598  mkdir flutter-test
+  599  cd flutter-test/
+  600  git clone https://github.com/rajayogan/flutter-googlemaps-nearbyplaces.git
+  601  cd ..
+  602  cd
+  603  cd Dev/android-studio/bin/
+  604  ./stduio.sh
+  605  ls
+  606  ./studio.sh 
+  607  cd "/home/bhavin/Documents/GitHub/Scheduling-Algorithms/" && g++ firstComeFirstServe.cpp -o firstComeFirstServe && "/home/bhavin/Documents/GitHub/Scheduling-Algorithms/"firstComeFirstServe
+  608  cd "/home/bhavin/Documents/GitHub/Scheduling-Algorithms/" && g++ test.cpp -o test && "/home/bhavin/Documents/GitHub/Scheduling-Algorithms/"test
+  609  cd "/home/bhavin/Documents/GitHub/Scheduling-Algorithms/" && g++ firstComeFirstServe.cpp -o firstComeFirstServe && "/home/bhavin/Documents/GitHub/Scheduling-Algorithms/"firstComeFirstServe
+  610  cd "/home/bhavin/Documents/GitHub/Scheduling-Algorithms/" && g++ test.cpp -o test && "/home/bhavin/Documents/GitHub/Scheduling-Algorithms/"test
+  611  cd "/home/bhavin/Documents/GitHub/Scheduling-Algorithms/" && g++ firstComeFirstServe.cpp -o firstComeFirstServe && "/home/bhavin/Documents/GitHub/Scheduling-Algorithms/"firstComeFirstServe
+  612  cd "/home/bhavin/Documents/GitHub/Scheduling-Algorithms/" && g++ test.cpp -o test && "/home/bhavin/Documents/GitHub/Scheduling-Algorithms/"test
+  613  cd "/home/bhavin/Documents/GitHub/Scheduling-Algorithms/" && g++ test.cpp -o test && "/home/bhavin/Documents/GitHub/Scheduling-Algorithms/"testcd "/home/bhavin/Documents/GitHub/Scheduling-Algorithms/" && g++ test.cpp -o test && "/home/bhavin/Documents/GitHub/Scheduling-Algorithms/"test
+  614  cd "/home/bhavin/Documents/GitHub/Scheduling-Algorithms/" && g++ test.cpp -o test && "/home/bhavin/Documents/GitHub/Scheduling-Algorithms/"test
+  615  cd "/home/bhavin/Documents/GitHub/Scheduling-Algorithms/" && g++ testfcfs.cpp -o testfcfs && "/home/bhavin/Documents/GitHub/Scheduling-Algorithms/"testfcfs
+  616  exit
+  617  htop
+  618  top
+  619  search top
+  620  bpytop
+  621  cd "/home/bhavin/Documents/GitHub/Scheduling-Algorithms/" && g++ firstComeFirstServe.cpp -o firstComeFirstServe && "/home/bhavin/Documents/GitHub/Scheduling-Algorithms/"firstComeFirstServe
+  622  code .
+  623  python
+  624  python -version
+  625  python --version
+  626  python3 --version
+  627  python3
+  628  sudo apt update
+  629  sudo apt install python3
+  630  sudo apt install libopencv-dev python3-opencv
+  631  pkg-config –modversion opencv4
+  632  pkg-config --modversion opencv4
+  633  python3
+  634  /bin/python3 "/home/bhavin/VIT/CS3202  ARTIFICIAL INTELLIGENCE/CP/Version-2/Main.py"
+  635  sudo apt install cv2
+  636  /bin/python3 "/home/bhavin/VIT/CS3202  ARTIFICIAL INTELLIGENCE/CP/Version-2/VehicleDetection.py"
+  637  python -u "/home/bhavin/VIT/CS3202  ARTIFICIAL INTELLIGENCE/CP/Version-2/VehicleDetection.py"
+  638  /bin/python3 "/home/bhavin/VIT/CS3202  ARTIFICIAL INTELLIGENCE/CP/Version-2/VehicleDetection.py"
+  639  matplotlib
+  640  python3
+  641  pip install matplotlib
+  642  sudo apt install python3-pip
+  643  pip install matplotlib
+  644  pip install numpy
+  645  sudo apt install python3-numpy
+  646  code .
+  647  /bin/python3 "/home/bhavin/VIT/CS3202  ARTIFICIAL INTELLIGENCE/CP/Version-2/Main.py"
+  648  pip install tkinter
+  649  sudo pip install tkinter
+  650  /bin/python3 "/home/bhavin/VIT/CS3202  ARTIFICIAL INTELLIGENCE/CP/Version-2/Plot.py"
+  651  /bin/python3 "/home/bhavin/VIT/CS3202  ARTIFICIAL INTELLIGENCE/CP/Version-2/Main.py"
+  652  sudo apt-get install python-tk
+  653  sudo apt-get install python-setuptools
+  654  sudo easy_install suds
+  655  sudo apt-get install python-matplotlib
+  656  /bin/python3 "/home/bhavin/VIT/CS3202  ARTIFICIAL INTELLIGENCE/CP/Version-2/Main.py"
+  657  code .
+  658  /bin/python3 "/home/bhavin/VIT/CS3202  ARTIFICIAL INTELLIGENCE/CP/Version-2/Main.py"
+  659  sudo apt-get install python3-tk
+  660  /bin/python3 "/home/bhavin/VIT/CS3202  ARTIFICIAL INTELLIGENCE/CP/Version-2/Main.py"
+  661  sudo apt-get install python3-pil python3-pil.imagetk
+  662  /bin/python3 "/home/bhavin/VIT/CS3202  ARTIFICIAL INTELLIGENCE/CP/Version-2/Main.py"
+  663  pip install ttkthemes
+  664  /bin/python3 "/home/bhavin/VIT/CS3202  ARTIFICIAL INTELLIGENCE/CP/Version-2/Main.py"
+  665  pip install Pillow==9.0.0
+  666  /bin/python3 "/home/bhavin/VIT/CS3202  ARTIFICIAL INTELLIGENCE/CP/Version-2/Main.py"
+  667  sudo apt install nautilus-actions
+  668  sudo apt-get install filemanager-actions
+  669  wget -qO- https://raw.githubusercontent.com/cra0zy/code-nautilus/master/install.sh | bash
+  670  code .
+  671  cd VIT/CS3202\ \ ARTIFICIAL\ INTELLIGENCE/
+  672  ls
+  673  cd CP/
+  674  ls
+  675  code .
+  676  python -u "/home/bhavin/VIT/CS3202  ARTIFICIAL INTELLIGENCE/CP/backgroundSubstraction.py"
+  677  /bin/python3 "/home/bhavin/VIT/CS3202  ARTIFICIAL INTELLIGENCE/CP/backgroundSubstraction.py"
+  678  /bin/python3 "/home/bhavin/VIT/CS3202  ARTIFICIAL INTELLIGENCE/CP/Version-2/Main.py"
+  679  python -u "/home/bhavin/VIT/CS3202  ARTIFICIAL INTELLIGENCE/CP/backgroundSubstraction.py"
+  680  /bin/python3 "/home/bhavin/VIT/CS3202  ARTIFICIAL INTELLIGENCE/CP/backgroundSubstraction.py"
+  681  code .
+  682  /bin/python3 "/home/bhavin/VIT/CS3202  ARTIFICIAL INTELLIGENCE/CP/Version-2/Main.py"
+  683  /bin/python3 "/home/bhavin/VIT/CS3202  ARTIFICIAL INTELLIGENCE/CP/backgroundSubstraction.py"
+  684  /bin/python3 "/home/bhavin/VIT/CS3202  ARTIFICIAL INTELLIGENCE/CP/backgroundSubstraction.py"/bin/python3 "/home/bhavin/VIT/CS3202  ARTIFICIAL INTELLIGENCE/CP/backgroundSubstraction.py"
+  685  /bin/python3 "/home/bhavin/VIT/CS3202  ARTIFICIAL INTELLIGENCE/CP/backgroundSubstraction.py"
+  686  sudo aptitude install putty
+  687  sudo apt update
+  688  sudo apt install putty
+  689  sudo apt install putty-tools
+  690  sudo apt upgrade
+  691  sudo apt autoremove
+  692  ifconfig
+  693  sudo apt-get update
+  694  sudo apt-get install vsftpd
+  695  sudo cp /etc/vsftpd.conf /etc/vsftpd.conf.original
+  696  sudo ufw status
+  697  sudo apt-get install ufw
+  698  sudo ufw enable
+  699  sudo ufw status
+  700  sudo ufw allow OpenSSH
+  701  sudo ufw allow 20/tcp
+  702  sudo ufw allow 21/tcp
+  703  sudo ufw allow 990/tcp
+  704  sudo ufw allow 40000:50000/tcp
+  705  sudo ufw status
+  706  sudo ufw limit ssh
+  707  sudo ufw status
+  708  sudo ufw allow OpenSSH
+  709  sudo ufw allow ssh
+  710  sudo ufw status
+  711  sudo adduser andor
+  712  sudo mkdir /home/andor/ftp
+  713  sudo chown nobody:nogroup /home/andor/ftp
+  714  sudo chmod a-w /home/andor/ftp
+  715  sudo ls -ls /home/andor/ftp
+  716  make
+  717  ./server 
+  718  gcc client.c -o client
+  719  ./client 
+  720  man bind
+  721  exit
+  722  sudo andor
+  723  su andor
+  724  sudo ls -la /home/andor/ftp
+  725  sudo mkdir /home/andor/ftp/files
+  726  sudo chown andor:andor /home/andor/ftp/files
+  727  echo "vsftpd sample file" | sudo tee /home/andor/ftp/files/sample.txt
+  728  sudo nano /etc/vsftpd.conf
+  729  echo "Andor" | sudo tee -a /etc/vsftpd.userlist
+  730  cat /etc/vsftpd.userlist 
+  731  rm /etc/vsftpd.userlist 
+  732  sudo rm /etc/vsftpd.userlist 
+  733  cat /etc/vsftpd.userlist 
+  734  echo "andor" | sudo tee -a /etc/vsftpd.userlist
+  735  cat /etc/vsftpd.userlist 
+  736  sudo systemctl restart vsftpd
+  737  sudo openssl req -x509 -nodes -days 365 -newkey rsa:2048 -keyout /etc/ssl/private/vsftpd.pem -out /etc/ssl/private/vsftpd.pem
+  738  sudo nano /etc/vsftpd.conf
+  739  sudo systemctl restart vsftpd
+  740  firezilla
+  741  sudo apt install firezilla
+  742  sudo apt install filezilla
+  743  ifconfig
+  744  cd Temp
+  745  ls
+  746  cd cn/
+  747  ls
+  748  cd cp/
+  749  ls
+  750  git clone https://github.com/nikhilroxtomar/File-Transfer-using-TCP-Socket-in-C.git
+  751  ls
+  752  cd File-Transfer-using-TCP-Socket-in-C/
+  753  code .
+  754  ./server 
+  755  code .
+  756  cd "/home/bhavin/VIT/CS3051  OPERATING SYSTEM/CP/Phase-2/Module-1/" && g++ module1.cpp -o module1 && "/home/bhavin/VIT/CS3051  OPERATING SYSTEM/CP/Phase-2/Module-1/"module1
+  757  cd "/home/bhavin/Temp/os/osphase2/Phase2/" && gcc phase2.c -o phase2 && "/home/bhavin/Temp/os/osphase2/Phase2/"phase2
+  758  cd "/home/bhavin/Temp/os/osphase2/Phase2/" && gcc execution.c -o execution && "/home/bhavin/Temp/os/osphase2/Phase2/"execution
+  759  cd "/home/bhavin/Temp/os/osphase2/Phase2/" && gcc phase2.c -o phase2 && "/home/bhavin/Temp/os/osphase2/Phase2/"phase2
+  760  cd "/home/bhavin/Temp/os/osphase2/Phase2/" && gcc execution.c -o execution && "/home/bhavin/Temp/os/osphase2/Phase2/"execution
+  761  cd "/home/bhavin/Temp/os/osphase2/Phase2/" && gcc phase2.c -o phase2 && "/home/bhavin/Temp/os/osphase2/Phase2/"phase2
+  762  cd "/home/bhavin/Temp/os/osphase2/Phase2/" && gcc utilities.c -o utilities && "/home/bhavin/Temp/os/osphase2/Phase2/"utilities
+  763  cd "/home/bhavin/Temp/os/osphase2/Phase2/" && gcc phase2.c -o phase2 && "/home/bhavin/Temp/os/osphase2/Phase2/"phase2
+  764  cd "/home/bhavin/VIT/CS3051  OPERATING SYSTEM/CP/Phase-2/Module-1/" && gcc module1.c -o module1 && "/home/bhavin/VIT/CS3051  OPERATING SYSTEM/CP/Phase-2/Module-1/"module1
+  765  sudo apt update
+  766  sudo apt upgrade
+  767  sudo apt update
+  768  reboot now
+  769  sudo reboot now
+  770  sudo apt install gnome-tweaks gnome-shell-extensions gnome-shell-extension-manager -y
+  771  git clone https://github.com/vinceliuice/WhiteSur-gtk-theme.git
+  772  cd WhiteSur-gtk-theme/
+  773  ls
+  774  ./install.sh -t all
+  775  ls
+  776  ./tweaks.sh 
+  777  ls
+  778  cd "/home/bhavin/Temp/os/osphase2/Phase2/" && gcc phase2.c -o phase2 && "/home/bhavin/Temp/os/osphase2/Phase2/"phase2
+  779  cd "/home/bhavin/Temp/os/osphase2/Phase2/" && gcc tempCodeRunnerFile.c -o tempCodeRunnerFile && "/home/bhavin/Temp/os/osphase2/Phase2/"tempCodeRunnerFile
+  780  cd "/home/bhavin/Temp/os/osphase2/Phase2/" && gcc phase2.c -o phase2 && "/home/bhavin/Temp/os/osphase2/Phase2/"phase2
+  781  cd "/home/bhavin/Downloads/5_6077615307818534881/Phase2/" && gcc phase2.c -o phase2 && "/home/bhavin/Downloads/5_6077615307818534881/Phase2/"phase2
+  782  ps
+  783  javac Simulator.java 
+  784  cd Encoding/
+  785  ls
+  786  javac Encoding.java 
+  787  java Encoding
+  788  ls
+  789  java --version
+  790  cd StudioProjects/
+  791  ls
+  792  git clone
+  793  git clone https://github.com/Uttkarsh09/IOT-Based-Pothole-Detection-System.git
+  794  cd StudioProjects/
+  795  git clone https://github.com/Uttkarsh09/IOT-Based-Pothole-Detection-System.git
+  796  cd Dev/android-studio/bin/
+  797  ./studio.sh 
+  798  LS
+  799  ls
+  800  Temp
+  801  cd Temp
+  802  ls
+  803  cd edi
+  804  ls
+  805  cd app
+  806  ls
+  807  git pull 
+  808  git
+  809  clear
+  810  git status
+  811  git pull origin master
+  812  cd ..
+  813  ls
+  814  git pull 
+  815  cd ..
+  816  git clone https://github.com/Uttkarsh09/IOT-Based-Pothole-Detection-System.git
+  817  sudo apt install steam-installer
+  818  ./script.sh 
+  819  cat script.sh 
+  820  ./script2.sh 
+  821  ./3numbers.sh 
+  822  ./script10.sh 
+  823  ./cal.sh 
+  824  ./problem1.sh 
+  825  ./problem2.sh 
+  826  ./problem3.sh 
+  827  ./problem4.sh 
+  828  ./reverNumber.sh 
+  829  ./userarray.sh 
+  830  flutter clean
+  831  build/ clean project + build/ rebuild project + file/ Invalidate caches / restart
+  832  cd build/
+  833  clean project + build/ rebuild project + file/ Invalidate caches / restart
+  834  clean project
+  835  cd Dev/android-studio/bin/
+  836  ./stduio.sh
+  837  ./studio.sh 
+  838  cd Dev/android-studio/bin/
+  839  ./studio.sh 
+  840  sudo dpkg -i discord-0.0.22.deb 
+  841  sudo apt update
+  842  sudo apt upgrade
+  843  cd Dev/android-studio/bin/
+  844  ./studio.sh 
+  845  cd "/home/bhavin/Temp/os/" && gcc diningPhilosopher.c -o diningPhilosopher && "/home/bhavin/Temp/os/"diningPhilosopher
+  846  cd "/home/bhavin/Temp/os/" && gcc test.c -o test && "/home/bhavin/Temp/os/"test
+  847  cd Temp
+  848  ls
+  849  cd os/
+  850  ls
+  851  code .
+  852  cd "/home/bhavin/Temp/os/" && gcc diningPhilosopher.c -o diningPhilosopher && "/home/bhavin/Temp/os/"diningPhilosopher
+  853  cd "/home/bhavin/Temp/os/" && gcc tempCodeRunnerFile.c -o tempCodeRunnerFile && "/home/bhavin/Temp/os/"tempCodeRunnerFile
+  854  cd "/home/bhavin/Temp/os/" && gcc diningPhilosopher.c -o diningPhilosopher && "/home/bhavin/Temp/os/"diningPhilosopher
+  855  cd "/home/bhavin/Temp/os/" && g++ bankers2.cpp -o bankers2 && "/home/bhavin/Temp/os/"bankers2
+  856  cd "/home/bhavin/Temp/whatsapp/OSLAB/" && gcc diningPhilosopher.c -o diningPhilosopher && "/home/bhavin/Temp/whatsapp/OSLAB/"diningPhilosopher
+  857  cd "/home/bhavin/Temp/whatsapp/OSLAB/" && gcc bankerAlgorithm.c -o bankerAlgorithm && "/home/bhavin/Temp/whatsapp/OSLAB/"bankerAlgorithm
+  858  cd "/home/bhavin/Temp/whatsapp/OSLAB/" && gcc test.c -o test && "/home/bhavin/Temp/whatsapp/OSLAB/"test
+  859  cd "/home/bhavin/Temp/whatsapp/OSLAB/" && gcc producerconsumer.c -o producerconsumer && "/home/bhavin/Temp/whatsapp/OSLAB/"producerconsumer
+  860  cd "/home/bhavin/Temp/whatsapp/OSLAB/" && gcc readerwriter.c -o readerwriter && "/home/bhavin/Temp/whatsapp/OSLAB/"readerwriter
+  861  bash "/home/bhavin/Temp/whatsapp/OSLAB/sort.sh"
+  862  cd "/home/bhavin/Temp/whatsapp/OSLAB/" && gcc producerconsumer.c -o producerconsumer && "/home/bhavin/Temp/whatsapp/OSLAB/"producerconsumer
+  863  cd "/home/bhavin/Temp/ai/" && g++ BestFirstSearch.cpp -o BestFirstSearch && "/home/bhavin/Temp/ai/"BestFirstSearch
+  864  cd "/home/bhavin/Temp/ai/" && g++ AStarSearch.cpp -o AStarSearch && "/home/bhavin/Temp/ai/"AStarSearch
+  865  cd "/home/bhavin/Temp/ai/" && g++ main.cpp -o main && "/home/bhavin/Temp/ai/"main
+  866  cd "/home/bhavin/Temp/ai/" && g++ BestFirstSearch.cpp -o BestFirstSearch && "/home/bhavin/Temp/ai/"BestFirstSearch
+  867  cd "/home/bhavin/Documents/GitHub/Artigficial-Intelligence-Problems/Contraint Satisfaction Problem/" && g++ sudokuSolver.cpp -o sudokuSolver && "/home/bhavin/Documents/GitHub/Artigficial-Intelligence-Problems/Contraint Satisfaction Problem/"sudokuSolver
+  868  cd "/home/bhavin/Temp/whatsapp/OSLAB/" && gcc ProCon.c -o ProCon && "/home/bhavin/Temp/whatsapp/OSLAB/"ProCon
+  869  cd "/home/bhavin/Temp/whatsapp/OSLAB/" && gcc producerconsumer.c -o producerconsumer && "/home/bhavin/Temp/whatsapp/OSLAB/"producerconsumer
+  870  gcc ProCon.c -lpthread
+  871  cd "/home/bhavin/Temp/whatsapp/OSLAB/" && gcc tempCodeRunnerFile.c -o tempCodeRunnerFile && "/home/bhavin/Temp/whatsapp/OSLAB/"tempCodeRunnerFile
+  872  cd "/home/bhavin/Temp/whatsapp/OSLAB/" && gcc producerconsumer.c -o producerconsumer && "/home/bhavin/Temp/whatsapp/OSLAB/"producerconsumer
+  873  bash "/home/bhavin/Temp/whatsapp/OSLAB/sort.sh"
+  874  bash "/home/bhavin/Temp/whatsapp/OSLAB/prime.sh"
+  875  git clone https://github.com/bhavinpatil/OS-Lab.git
+  876  cat
+  877  ls
+  878  mkdir OSLAB
+  879  ls
+  880  cd OSLAB/
+  881  ls
+  882  man cat > output
+  883  ls
+  884  cat output 
+  885  la  -al
+  886  wc output 
+  887  man wc
+  888  wc -m output 
+  889  wc -l output 
+  890  cd "/home/bhavin/Temp/whatsapp/OSLAB/" && gcc readerWriter.c -o readerWriter && "/home/bhavin/Temp/whatsapp/OSLAB/"readerWriter
+  891  bash "/home/bhavin/Temp/whatsapp/OSLAB/test.sh"
+  892  cd "/home/bhavin/Temp/whatsapp/OSLAB/" && gcc PageReplacementFIFO.c -o PageReplacementFIFO && "/home/bhavin/Temp/whatsapp/OSLAB/"PageReplacementFIFO
+  893  cd "/home/bhavin/Temp/whatsapp/OSLAB/" && gcc test3.c -o test3 && "/home/bhavin/Temp/whatsapp/OSLAB/"test3
+  894  cd "/home/bhavin/Temp/whatsapp/OSLAB/" && gcc PageReplacementFIFO.c -o PageReplacementFIFO && "/home/bhavin/Temp/whatsapp/OSLAB/"PageReplacementFIFO
+  895  nano sort.sh
+  896  chmod +x sort.sh 
+  897  ./sort.sh 
+  898  nano sort.sh
+  899  rm sort.sh 
+  900  ls
+  901  nano sort.sh
+  902  chmod +x sort.sh 
+  903  ./sort.sh 
+  904  rm sort.sh 
+  905  nano sort.sh
+  906  chmod +x sort.sh 
+  907  ./sort.sh 
+  908  nano sort.sh
+  909  ./sort.sh 
+  910  nano sort.sh
+  911  ./sort.sh 
+  912  nano sort.sh
+  913  ./sort.sh 
+  914  nano sort.sh
+  915  ./sort.sh 
+  916  nano sort.sh
+  917  ./sort.sh 
+  918  nano sort.sh
+  919  ./sort.sh 
+  920  nano sort.sh
+  921  ./sort.sh 
+  922  nano sort.sh
+  923  ./sort.sh 
+  924  cd "/home/bhavin/Temp/os/Phase2/" && gcc phase2.c -o phase2 && "/home/bhavin/Temp/os/Phase2/"phase2
+  925  git clone https://github.com/bhavinpatil/Multiprogramming-Operating-System.git
+  926  login
+  927  who
+  928  who -q
+  929  tailmyless
+  930  alias
+  931  ll
+  932  nano .bashrc 
+  933  ls
+  934  ls -aF
+  935  ls -alF
+  936  ll
+  937  alias
+  938  cd te
+  939  cd Temp
+  940  ls
+  941  cat file.cpp 
+  942  ls
+  943  rm file.cpp 
+  944  ls
+  945  cat .bashrc
+  946  cd ..
+  947  nano .bashrc 
+  948  exit
+  949  ls -l
+  950  touch permission.txt
+  951  ls -l
+  952  chmod o-r
+  953  ls -l
+  954  chmod o-r permission.txt 
+  955  ls -l
+  956  exit
+  957  ln
+  958  ln --help
+  959  ls
+  960  rm file.cpp.save
+  961  ls
+  962  rm permission.txt 
+  963  ls
+  964  cd Temp
+  965  ls
+  966  cd os/
+  967  ls
+  968  echo 'this is a test' > foo
+  969  ls
+  970  ln foo bar
+  971  ls 
+  972  ls -li
+  973  ls -li foo bar
+  974  cat foo 
+  975  cat bar 
+  976  ln -v foo hardlink
+  977  ls
+  978  cat hardlink 
+  979  rm foo 
+  980  cat hardlink 
+  981  ls -li hardlink 
+  982  ls
+  983  rm bar 
+  984  ls
+  985  cd b
+  986  ls
+  987  cat hardlink 
+  988  rm hardlink 
+  989  echo "I love Linux" > file.txt
+  990  ls
+  991  cat file
+  992  ls
+  993  cat file.txt 
+  994  ln -v file.txt hardlink1
+  995  ln -v file.txt hardlink2
+  996  ls -li file.txt hardlink?
+  997  rm hardlink1
+  998  ls -li file.txt hardlink?
+  999  rm file.txt 
+ 1000  ls -li file.txt hardlink?
+ 1001  cat hardlink2 
+ 1002  cat file.txt hardlink?
+ 1003  rm hardlink2 
+ 1004  cat file.txt hardlink?
+ 1005  ls -li file.txt hardlink?
+ 1006  ls -l postuploaded
+ 1007  touch temp.sh
+ 1008  ls
+ 1009  ls -l temp.sh 
+ 1010  ln -sv temp.sh real.sh
+ 1011  ln -sv temp.sh real2.sh
+ 1012  ls -li temp.sh real.sh real2.sh 
+ 1013  ls -li temp.sh real?
+ 1014  ls
+ 1015  rm real2.sh 
+ 1016  rm real.sh 
+ 1017  ls
+ 1018  rm temp.sh 
+ 1019  echo "I Hate VIT" > file.txt
+ 1020  ls
+ 1021  rm file.txt 
+ 1022  echo "I Hate VIT" > vit.txt
+ 1023  cat vit.txt 
+ 1024  ln -v vit.txt hardlink1
+ 1025  ln -v vit.txt hardlink2
+ 1026  ls
+ 1027  ls -li vit.txt hardlink?
+ 1028  ls -li vit.txt hardlink1 hardlink2
+ 1029  ln -sv vit.txt softlink1
+ 1030  ln -sv vit.txt softlink2
+ 1031  ls -li vit.txt softlink?
+ 1032  ls
+ 1033* 
+ 1034  cat vit.txt 
+ 1035  tr vit.txt [:lower:] [:upper:]
+ 1036  tr --help
+ 1037  cat vit.txt | tr [:lower:] [:upper:]
+ 1038  cat vit.txt | tr [:upper:] [:lower:]
+ 1039  man cat > cat.txt
+ 1040  ls
+ 1041  rm cat.txt 
+ 1042  ls
+ 1043  history 
+ 1044  history > hist.txt
+ 1045  ls
+ 1046  rm hist.txt 
+ 1047  history > bhavin.txt
