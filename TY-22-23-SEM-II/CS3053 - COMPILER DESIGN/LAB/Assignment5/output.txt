@@ -1,0 +1,21 @@
+#include <stdio.h>
+/*This program prints a 
+    welcome message in 
+    uppercase letters*/
+
+/* This program prints a 
+    welcome message in 
+    uppercase letters */
+
+int main() {
+    char message[] = "hello, world!";
+
+    // Convert message to uppercase 
+    for (int i = 0; message[i] != '\0'; i++) {
+        if (message[i] >= 'a' && message[i] <= 'z') {
+            message[i] = message[i] - 32;
+        }
+    }
+    printf("%s\n", message);
+    return 0;
+}

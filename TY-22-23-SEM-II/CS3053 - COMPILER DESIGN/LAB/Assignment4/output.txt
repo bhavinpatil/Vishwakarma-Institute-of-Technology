@@ -1,0 +1,33 @@
+Invalid Character
+Identifier: include
+Relational Operator: <
+Identifier: stdio
+Period
+Identifier: h
+Relational Operator: >
+
+Identifier: int
+Invalid Character
+Identifier: main
+Left Parenthesis
+Right Parenthesis
+
+Left Brace
+
+Identifier: printf
+Left Parenthesis
+Invalid Character
+Identifier: Hello
+Invalid Character
+Identifier: World
+Logical NOT
+Invalid Character
+Right Parenthesis
+Semicolon
+
+Identifier: return
+Invalid Character
+Number: 0
+Semicolon
+
+Right Brace

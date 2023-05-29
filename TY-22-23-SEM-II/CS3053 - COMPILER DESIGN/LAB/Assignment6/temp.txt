@@ -1,0 +1,23 @@
+to validate arithmatic expression and evaluate them
+
+stt
+syntax analyser
+
+semantic analyser
+
+1st
+to generate tokens (lex program)
+
+
+2nd yalk program
+
+
+
+-flex prog.l  == lex.yy.c
+
+-bison -d prog.y == prog.tab.h
+		 == prog.tab.c
+
+-gcc lex.yy.c prog.tab.c
+
+-a.exe 

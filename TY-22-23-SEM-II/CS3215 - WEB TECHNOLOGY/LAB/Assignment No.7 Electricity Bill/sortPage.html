@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Sorting Algorithms</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        .container {
+            margin-top: 50px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            margin: 5px;
+            width: 100%;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        input[type="button"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+
+        input[type="button"]:hover {
+            background-color: #45a049;
+        }
+
+        .array-section {
+            margin-top: 20px;
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .array-section>div {
+            width: 30%;
+            background-color: #fff;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+        }
+
+        h2 {
+            margin-top: 0;
+            margin-bottom: 10px;
+        }
+
+        ul {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        li {
+            margin-bottom: 5px;
+        }
+
+        #redirect-btn {
+            display: block;
+            margin: 20px auto;
+            width: 80%;
+            max-width: 400px;
+            padding: 10px;
+            font-size: 16px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            text-align: center;
+            text-decoration: none;
+            color: #fff;
+            background-color: #2196F3;
+        }
+
+        #redirect-btn:hover {
+            background-color: #0c7cd5;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Sorting Algorithms</h1>
+        <form>
+            <label for="input-array">Enter an array of integers:</label>
+            <input type="text" id="input-array" name="input-array">
+            <input type="button" value="Sort" onclick="sortArray()">
+        </form>
+
+        <div class="array-section">
+            <div>
+                <h2>Quick Sort</h2>
+                <ul id="quick-sort-array"></ul>
+            </div>
+            <div>
+                <h2>Selection Sort</h2>
+                <ul id="selection-sort-array"></ul>
+            </div>
+            <div>
+                <h2>Array.prototype.sort()</h2>
+                <ul id="js-sort-array"></ul>
+            </div>
+        </div>
+    </div>
+
+    <a href="lightBillPage.html" id="redirect-btn">Go to new page</a>
+
+
+    <script>
+        function sortArray() {
+            const inputArray = document.getElementById("input-array").value.trim();
+            if (inputArray.length === 0) {
+                alert("Please enter an array of integers.");
+                return;
+            }
+
+            const inputArrayParsed = inputArray.split(",").map(str => parseInt(str.trim()));
+
+            const quickSortArray = quickSort(inputArrayParsed);
+            const selectionSortArray = selectionSort(inputArrayParsed);
+            const jsSortArray = inputArrayParsed.sort((a, b) => a - b);
+
+            displayArray(quickSortArray, "quick-sort-array");
+            displayArray(selectionSortArray, "selection-sort-array");
+            displayArray(jsSortArray, "js-sort-array");
+        }
+
+        function quickSort(arr) {
+            if (arr.length <= 1) {
+                return arr;
+            }
+
+            const pivot = arr[Math.floor(Math.random() * arr.length)];
+            const left = [];
+            const right = [];
+
+            for (let i = 0; i < arr.length; i++) {
+                if (arr[i] < pivot) {
+                    left.push(arr[i]);
+                } else if (arr[i] > pivot) {
+                    right.push(arr[i]);
+                }
+            }
+
+            return [...quickSort(left), pivot, ...quickSort(right)];
+        }
+
+        function selectionSort(arr) {
+            for (let i = 0; i < arr.length; i++) {
+                let minIndex = i;
+
+                for (let j = i + 1; j < arr.length; j++) {
+                    if (arr[j] < arr[minIndex]) {
+                        minIndex = j;
+                    }
+                }
+
+                if (minIndex !== i) {
+                    const temp = arr[i];
+                    arr[i] = arr[minIndex];
+                    arr[minIndex] = temp;
+                }
+            }
+
+            return arr;
+        }
+
+        function displayArray(arr, elementId) {
+            const element = document.getElementById(elementId);
+            element.innerHTML = "";
+
+            arr.forEach(item => {
+                const li = document.createElement("li");
+                li.innerText = item;
+                element.appendChild(li);
+            });
+        }
+
+    </script>
+</body>
+
+</html>
