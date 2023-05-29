@@ -1,0 +1,169 @@
+---
+output:
+  html_document: default
+  word_document: default
+  pdf_document: default
+---
+```{r}
+df <- read.csv("datasetHA.csv")
+head(df)
+```
+
+
+Data Pre-processing
+
+```{r}
+head(df)
+keeps <- c("Reference.Area", "Time.Period","Observation.Value")
+df <- df[keeps]
+head(df)
+```
+
+```{r}
+sum(is.null(df))
+```
+
+
+Normalizing the observation values.
+
+```{r}
+library(caret)
+process <- preProcess(as.data.frame(df$Observation.Value), method = "range")
+process
+scale <- predict(process, as.data.frame(df$Observation.Value))
+df <- cbind(df, scale)
+colnames(df) <- c("ReferenceArea", "TimePeriod", "ObservationValue","Scale")
+head(df)
+```
+
+
+Data Splitting
+
+```{r}
+
+library(dplyr)
+
+df %>% filter(ReferenceArea == "India" ) -> a1
+df %>% filter(ReferenceArea == "France" ) -> a2
+df %>% filter(ReferenceArea == "Germany" ) -> a3
+df %>% filter(ReferenceArea == "Pakistan" ) -> a4
+df %>% filter(ReferenceArea == "United States of America" ) -> a5
+
+train <- rbind(a1, a2, a3, a4, a5)
+
+summary(df)
+train %>% filter(TimePeriod > 2000 & TimePeriod < 2010) -> train
+
+```
+
+
+Bar Plot
+
+```{r}
+
+ggplot(train, aes(fill=ReferenceArea, y=Scale, x=TimePeriod))+geom_bar(position="dodge", stat="identity")+theme(axis.text.x =element_text(angle=0,vjust=0.5),plot.title=element_text(color="black",size=16))+labs(x="Time Period",y="Value",title="Primary Expenditure of 5 Countries")
+
+```
+
+
+Box Plot
+
+```{r}
+ggplot(train,aes(ReferenceArea, Scale,fill=ReferenceArea))+geom_boxplot(outlier.color="red",outlier.shape=4,outlier.size = 4)+theme(legend.position = "dodge")+ggtitle("Boxplot")+xlab("Reference Area")+ylab("Scale Values")
+
+```
+
+
+Meta Data
+
+```{r}
+
+str(train)
+summary(train)
+```
+
+
+Hypothesis Testing for Year 2010
+
+```{r}
+
+df %>% filter(TimePeriod == 2010) -> Hypotrain
+meanObs <- mean(df$ObservationValue)
+cat("Mean of Population Data: ",meanObs)
+stdDev <- sd(df$ObservationValue)
+cat("\n\nStandard Deviation of Population Data: ", stdDev)
+Samean <- mean(Hypotrain$ObservationValue)
+cat("\n\nMean of Sample Data: ",Samean)
+Pval<- pnorm(meanObs,Samean,stdDev)
+cat("\n\nP-Value: ",Pval)
+if(Pval < 0.05){
+  cat("\n\nReject null Hypothesis for 0.05")
+}else{
+  cat("\n\nDo not Reject null Hypothesis for 0.05")
+}
+
+if(Pval < 0.01){
+  cat("\n\nReject null Hypothesis for 0.01")
+}else{
+  cat("\n\nDo not Reject null Hypothesis for 0.01")
+}
+```
+
+
+Principle Components
+
+```{r}
+
+head(train)
+
+prcomtrain <- train[, 2:3]
+
+head(prcomtrain)
+
+prcom <- prcomp(prcomtrain, scale. = TRUE)
+summary(prcom)
+
+```
+
+
+Cor-relation
+
+```{r}
+
+library(ggplot2)
+ggplot(train,aes(TimePeriod,Scale,col=ReferenceArea))+geom_point(size=3)+geom_text(aes(label=""),size=3,nudge_x=0.050)+labs(title="SCATTERPLOT",x="Time Period",y="Values")
+cor(train$TimePeriod, train$Scale)
+Indi <- cor(a1$TimePeriod, a1$Scale)
+Frn <- cor(a2$TimePeriod, a2$Scale)
+Usa <- cor(a5$TimePeriod, a5$Scale)
+Ger <- cor(a3$TimePeriod, a3$Scale)
+Pak <- cor(a4$TimePeriod, a4$Scale)
+
+fdata <- data.frame(C_name = rep(c('India', 'France', 'Germany', 'Pakistan', 'USA')),
+                    Cor_Val = rep(c(Indi, Frn, Ger, Pak, Usa)))
+fdata
+```
+
+
+Regression
+
+```{r}
+
+l1 <- lm(Scale~TimePeriod, a1)
+summary(l1)
+
+#Predicted Values
+prd <- predict(l1)
+prd
+
+#Confirming the Predicted Values
+head(a1)
+
+#Error Values
+er <- a1$Scale - prd
+er
+ 
+#Scatter plot for India with Regression Line
+ggplot(a1, aes(TimePeriod, Scale))+geom_point()+geom_smooth(method = "lm", formula = y~x, col="red", se=F)
+
+```

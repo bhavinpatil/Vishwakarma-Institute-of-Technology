@@ -1,0 +1,64 @@
+Questions: -
+What is Java?
+What is JVM?
+Where are strings stored?
+What are types of memories used?
+Types of inheritance
+Types constructors
+Packages in Java
+Use of Static in Java
+Why java is platform independent 
+What is JRE
+About multiple inheritance
+This keyboard
+Abstract class
+Objects
+Difference between static and instance block
+Is no- argument and default constructor same
+Which method is called by super keyword
+
+What is Diff bet method overloading and overrding
+what is final K/w?
+
+what is collection
+is collection an interface or class
+what is framework
+what is collection framework
+classes implementing collection interface
+is list and set an interace or class
+classes implementing list interface
+what is map
+what is aabstraction
+abstract classes
+diff between abstrct classes and interfaces
+does an abstract class need to have abstract methods
+
+
+this()
+super() 
+SCP ? 
+Checked Unchecked exceptions
+Ways of handling the exceptions
+
+List,SEt,Map...Classes they contain
+Definition of list ,SEt map
+What is hashmap...?
+What is singleton pattern/class...??
+
+Finally keyword
+Object
+How to use super
+Runtime and compile time polymorphism difference
+Abstraction
+Public private protected
+
+What is SCP...??
+_________
+String, string builder, string buffer easy questions
+scp
+finalize 
+can we access non static variable in static method
+
+
+What is gc?
+What are different methods in Collections framework?

@@ -1,0 +1,456 @@
+% Options for packages loaded elsewhere
+\PassOptionsToPackage{unicode}{hyperref}
+\PassOptionsToPackage{hyphens}{url}
+%
+\documentclass[
+]{article}
+\usepackage{amsmath,amssymb}
+\usepackage{lmodern}
+\usepackage{iftex}
+\ifPDFTeX
+  \usepackage[T1]{fontenc}
+  \usepackage[utf8]{inputenc}
+  \usepackage{textcomp} % provide euro and other symbols
+\else % if luatex or xetex
+  \usepackage{unicode-math}
+  \defaultfontfeatures{Scale=MatchLowercase}
+  \defaultfontfeatures[\rmfamily]{Ligatures=TeX,Scale=1}
+\fi
+% Use upquote if available, for straight quotes in verbatim environments
+\IfFileExists{upquote.sty}{\usepackage{upquote}}{}
+\IfFileExists{microtype.sty}{% use microtype if available
+  \usepackage[]{microtype}
+  \UseMicrotypeSet[protrusion]{basicmath} % disable protrusion for tt fonts
+}{}
+\makeatletter
+\@ifundefined{KOMAClassName}{% if non-KOMA class
+  \IfFileExists{parskip.sty}{%
+    \usepackage{parskip}
+  }{% else
+    \setlength{\parindent}{0pt}
+    \setlength{\parskip}{6pt plus 2pt minus 1pt}}
+}{% if KOMA class
+  \KOMAoptions{parskip=half}}
+\makeatother
+\usepackage{xcolor}
+\IfFileExists{xurl.sty}{\usepackage{xurl}}{} % add URL line breaks if available
+\IfFileExists{bookmark.sty}{\usepackage{bookmark}}{\usepackage{hyperref}}
+\hypersetup{
+  hidelinks,
+  pdfcreator={LaTeX via pandoc}}
+\urlstyle{same} % disable monospaced font for URLs
+\usepackage[margin=1in]{geometry}
+\usepackage{color}
+\usepackage{fancyvrb}
+\newcommand{\VerbBar}{|}
+\newcommand{\VERB}{\Verb[commandchars=\\\{\}]}
+\DefineVerbatimEnvironment{Highlighting}{Verbatim}{commandchars=\\\{\}}
+% Add ',fontsize=\small' for more characters per line
+\usepackage{framed}
+\definecolor{shadecolor}{RGB}{248,248,248}
+\newenvironment{Shaded}{\begin{snugshade}}{\end{snugshade}}
+\newcommand{\AlertTok}[1]{\textcolor[rgb]{0.94,0.16,0.16}{#1}}
+\newcommand{\AnnotationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\AttributeTok}[1]{\textcolor[rgb]{0.77,0.63,0.00}{#1}}
+\newcommand{\BaseNTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\BuiltInTok}[1]{#1}
+\newcommand{\CharTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\CommentTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\CommentVarTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ConstantTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ControlFlowTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\DataTypeTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{#1}}
+\newcommand{\DecValTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\DocumentationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\ErrorTok}[1]{\textcolor[rgb]{0.64,0.00,0.00}{\textbf{#1}}}
+\newcommand{\ExtensionTok}[1]{#1}
+\newcommand{\FloatTok}[1]{\textcolor[rgb]{0.00,0.00,0.81}{#1}}
+\newcommand{\FunctionTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\ImportTok}[1]{#1}
+\newcommand{\InformationTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\newcommand{\KeywordTok}[1]{\textcolor[rgb]{0.13,0.29,0.53}{\textbf{#1}}}
+\newcommand{\NormalTok}[1]{#1}
+\newcommand{\OperatorTok}[1]{\textcolor[rgb]{0.81,0.36,0.00}{\textbf{#1}}}
+\newcommand{\OtherTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{#1}}
+\newcommand{\PreprocessorTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textit{#1}}}
+\newcommand{\RegionMarkerTok}[1]{#1}
+\newcommand{\SpecialCharTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\SpecialStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\StringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\VariableTok}[1]{\textcolor[rgb]{0.00,0.00,0.00}{#1}}
+\newcommand{\VerbatimStringTok}[1]{\textcolor[rgb]{0.31,0.60,0.02}{#1}}
+\newcommand{\WarningTok}[1]{\textcolor[rgb]{0.56,0.35,0.01}{\textbf{\textit{#1}}}}
+\usepackage{graphicx}
+\makeatletter
+\def\maxwidth{\ifdim\Gin@nat@width>\linewidth\linewidth\else\Gin@nat@width\fi}
+\def\maxheight{\ifdim\Gin@nat@height>\textheight\textheight\else\Gin@nat@height\fi}
+\makeatother
+% Scale images if necessary, so that they will not overflow the page
+% margins by default, and it is still possible to overwrite the defaults
+% using explicit options in \includegraphics[width, height, ...]{}
+\setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
+% Set default figure placement to htbp
+\makeatletter
+\def\fps@figure{htbp}
+\makeatother
+\setlength{\emergencystretch}{3em} % prevent overfull lines
+\providecommand{\tightlist}{%
+  \setlength{\itemsep}{0pt}\setlength{\parskip}{0pt}}
+\setcounter{secnumdepth}{-\maxdimen} % remove section numbering
+\ifLuaTeX
+  \usepackage{selnolig}  % disable illegal ligatures
+\fi
+
+\author{}
+\date{\vspace{-2.5em}}
+
+\begin{document}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{df }\OtherTok{\textless{}{-}} \FunctionTok{read.csv}\NormalTok{(}\StringTok{"datasetHA.csv"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+Data Pre-processing
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{head}\NormalTok{(df)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##   Reference.Area Time.Period            Sex      Age.group Units.of.measurement
+## 1        Albania        2007 Not applicable Not applicable               Number
+## 2        Albania        2008 Not applicable Not applicable               Number
+## 3        Algeria        2001 Not applicable Not applicable               Number
+## 4        Algeria        2002 Not applicable Not applicable               Number
+## 5        Algeria        2003 Not applicable Not applicable               Number
+## 6        Algeria        2004 Not applicable Not applicable               Number
+##   Observation.Value
+## 1         845500000
+## 2        1665500000
+## 3        9734253000
+## 4       16571247000
+## 5       10306455000
+## 6       10058086000
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{keeps }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(}\StringTok{"Reference.Area"}\NormalTok{, }\StringTok{"Time.Period"}\NormalTok{,}\StringTok{"Observation.Value"}\NormalTok{)}
+\NormalTok{df }\OtherTok{\textless{}{-}}\NormalTok{ df[keeps]}
+\FunctionTok{head}\NormalTok{(df)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##   Reference.Area Time.Period Observation.Value
+## 1        Albania        2007         845500000
+## 2        Albania        2008        1665500000
+## 3        Algeria        2001        9734253000
+## 4        Algeria        2002       16571247000
+## 5        Algeria        2003       10306455000
+## 6        Algeria        2004       10058086000
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{sum}\NormalTok{(}\FunctionTok{is.null}\NormalTok{(df))}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 0
+\end{verbatim}
+
+Normalizing the observation values.
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(caret)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning: package 'caret' was built under R version 4.1.3
+\end{verbatim}
+
+\begin{verbatim}
+## Loading required package: ggplot2
+\end{verbatim}
+
+\begin{verbatim}
+## Warning: package 'ggplot2' was built under R version 4.1.3
+\end{verbatim}
+
+\begin{verbatim}
+## Loading required package: lattice
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{process }\OtherTok{\textless{}{-}} \FunctionTok{preProcess}\NormalTok{(}\FunctionTok{as.data.frame}\NormalTok{(df}\SpecialCharTok{$}\NormalTok{Observation.Value), }\AttributeTok{method =} \FunctionTok{c}\NormalTok{(}\StringTok{"range"}\NormalTok{))}
+\NormalTok{scale }\OtherTok{\textless{}{-}} \FunctionTok{predict}\NormalTok{(process, }\FunctionTok{as.data.frame}\NormalTok{(df}\SpecialCharTok{$}\NormalTok{Observation.Value))}
+\NormalTok{df }\OtherTok{\textless{}{-}} \FunctionTok{cbind}\NormalTok{(df, scale)}
+\FunctionTok{colnames}\NormalTok{(df) }\OtherTok{\textless{}{-}} \FunctionTok{c}\NormalTok{(}\StringTok{"ReferenceArea"}\NormalTok{, }\StringTok{"TimePeriod"}\NormalTok{, }\StringTok{"ObservationValue"}\NormalTok{, }\StringTok{"Scale"}\NormalTok{)}
+\FunctionTok{head}\NormalTok{(df)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##   ReferenceArea TimePeriod ObservationValue        Scale
+## 1       Albania       2007        845500000 1.325951e-05
+## 2       Albania       2008       1665500000 2.612545e-05
+## 3       Algeria       2001       9734253000 1.527257e-04
+## 4       Algeria       2002      16571247000 2.599993e-04
+## 5       Algeria       2003      10306455000 1.617036e-04
+## 6       Algeria       2004      10058086000 1.578067e-04
+\end{verbatim}
+
+Data Splitting
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(dplyr)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## Warning: package 'dplyr' was built under R version 4.1.3
+\end{verbatim}
+
+\begin{verbatim}
+## 
+## Attaching package: 'dplyr'
+\end{verbatim}
+
+\begin{verbatim}
+## The following objects are masked from 'package:stats':
+## 
+##     filter, lag
+\end{verbatim}
+
+\begin{verbatim}
+## The following objects are masked from 'package:base':
+## 
+##     intersect, setdiff, setequal, union
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{df }\SpecialCharTok{\%\textgreater{}\%} \FunctionTok{filter}\NormalTok{(ReferenceArea }\SpecialCharTok{==} \StringTok{"India"}\NormalTok{ ) }\OtherTok{{-}\textgreater{}}\NormalTok{ a1}
+\NormalTok{df }\SpecialCharTok{\%\textgreater{}\%} \FunctionTok{filter}\NormalTok{(ReferenceArea }\SpecialCharTok{==} \StringTok{"France"}\NormalTok{ ) }\OtherTok{{-}\textgreater{}}\NormalTok{ a2}
+\NormalTok{df }\SpecialCharTok{\%\textgreater{}\%} \FunctionTok{filter}\NormalTok{(ReferenceArea }\SpecialCharTok{==} \StringTok{"Germany"}\NormalTok{ ) }\OtherTok{{-}\textgreater{}}\NormalTok{ a3}
+\NormalTok{df }\SpecialCharTok{\%\textgreater{}\%} \FunctionTok{filter}\NormalTok{(ReferenceArea }\SpecialCharTok{==} \StringTok{"Pakistan"}\NormalTok{ ) }\OtherTok{{-}\textgreater{}}\NormalTok{ a4}
+\NormalTok{df }\SpecialCharTok{\%\textgreater{}\%} \FunctionTok{filter}\NormalTok{(ReferenceArea }\SpecialCharTok{==} \StringTok{"United States of America"}\NormalTok{ ) }\OtherTok{{-}\textgreater{}}\NormalTok{ a5}
+
+\NormalTok{train }\OtherTok{\textless{}{-}} \FunctionTok{rbind}\NormalTok{(a1, a2, a3, a4, a5)}
+
+\NormalTok{train }\SpecialCharTok{\%\textgreater{}\%} \FunctionTok{filter}\NormalTok{(TimePeriod }\SpecialCharTok{\textgreater{}} \DecValTok{2000} \SpecialCharTok{\&}\NormalTok{ TimePeriod }\SpecialCharTok{\textless{}} \DecValTok{2010}\NormalTok{) }\OtherTok{{-}\textgreater{}}\NormalTok{ train}
+\end{Highlighting}
+\end{Shaded}
+
+Bar Plot
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{ggplot}\NormalTok{(train, }\FunctionTok{aes}\NormalTok{(}\AttributeTok{fill=}\NormalTok{ReferenceArea, }\AttributeTok{y=}\NormalTok{Scale, }\AttributeTok{x=}\NormalTok{TimePeriod))}\SpecialCharTok{+}\FunctionTok{geom\_bar}\NormalTok{(}\AttributeTok{position=}\StringTok{"dodge"}\NormalTok{, }\AttributeTok{stat=}\StringTok{"identity"}\NormalTok{)}\SpecialCharTok{+}\FunctionTok{theme}\NormalTok{(}\AttributeTok{axis.text.x =}\FunctionTok{element\_text}\NormalTok{(}\AttributeTok{angle=}\DecValTok{90}\NormalTok{,}\AttributeTok{vjust=}\FloatTok{0.5}\NormalTok{),}\AttributeTok{plot.title=}\FunctionTok{element\_text}\NormalTok{(}\AttributeTok{color=}\StringTok{"black"}\NormalTok{,}\AttributeTok{size=}\DecValTok{16}\NormalTok{,}\AttributeTok{face=}\StringTok{"italic"}\NormalTok{))}\SpecialCharTok{+}\FunctionTok{labs}\NormalTok{(}\AttributeTok{x=}\StringTok{""}\NormalTok{,}\AttributeTok{y=}\StringTok{"Value"}\NormalTok{,}\AttributeTok{title=}\StringTok{"Primary Expenditure of 5 Countries"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{HomeAssignment_files/figure-latex/unnamed-chunk-6-1.pdf}
+
+Box Plot
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{ggplot}\NormalTok{(train,}\FunctionTok{aes}\NormalTok{(ReferenceArea, Scale,}\AttributeTok{fill=}\NormalTok{ReferenceArea))}\SpecialCharTok{+}\FunctionTok{geom\_boxplot}\NormalTok{(}\AttributeTok{outlier.color=}\StringTok{"red"}\NormalTok{,}\AttributeTok{outlier.shape=}\DecValTok{4}\NormalTok{,}\AttributeTok{outlier.size =} \DecValTok{4}\NormalTok{)}\SpecialCharTok{+}\FunctionTok{theme}\NormalTok{(}\AttributeTok{legend.position =} \StringTok{"dodge"}\NormalTok{)}\SpecialCharTok{+}\FunctionTok{ggtitle}\NormalTok{(}\StringTok{"Boxplot"}\NormalTok{)}\SpecialCharTok{+}\FunctionTok{xlab}\NormalTok{(}\StringTok{"Reference Area"}\NormalTok{)}\SpecialCharTok{+}\FunctionTok{ylab}\NormalTok{(}\StringTok{"Scale Values"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{HomeAssignment_files/figure-latex/unnamed-chunk-7-1.pdf}
+
+Meta Data
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{str}\NormalTok{(train)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 'data.frame':    41 obs. of  4 variables:
+##  $ ReferenceArea   : chr  "India" "India" "India" "India" ...
+##  $ TimePeriod      : int  2001 2002 2003 2004 2005 2006 2007 2008 2009 2001 ...
+##  $ ObservationValue: num  1.70e+11 1.81e+11 2.01e+11 2.41e+11 2.99e+11 ...
+##  $ Scale           : num  0.00267 0.00284 0.00315 0.00378 0.0047 ...
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{summary}\NormalTok{(train)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##  ReferenceArea        TimePeriod   ObservationValue        Scale          
+##  Length:41          Min.   :2001   Min.   :7.018e+09   Min.   :0.0001101  
+##  Class :character   1st Qu.:2003   1st Qu.:4.107e+10   1st Qu.:0.0006443  
+##  Mode  :character   Median :2005   Median :6.148e+10   Median :0.0009647  
+##                     Mean   :2005   Mean   :1.681e+11   Mean   :0.0026370  
+##                     3rd Qu.:2007   3rd Qu.:2.993e+11   3rd Qu.:0.0046965  
+##                     Max.   :2009   Max.   :5.304e+11   Max.   :0.0083223
+\end{verbatim}
+
+Cor-relation
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{head}\NormalTok{(train)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##   ReferenceArea TimePeriod ObservationValue       Scale
+## 1         India       2001     170381500000 0.002673310
+## 2         India       2002     180881600000 0.002838059
+## 3         India       2003     200863400000 0.003151577
+## 4         India       2004     241172400000 0.003784032
+## 5         India       2005     299325800000 0.004696470
+## 6         India       2006     342383900000 0.005372059
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{library}\NormalTok{(ggplot2)}
+\FunctionTok{ggplot}\NormalTok{(train,}\FunctionTok{aes}\NormalTok{(TimePeriod,Scale,}\AttributeTok{col=}\NormalTok{ReferenceArea))}\SpecialCharTok{+}\FunctionTok{geom\_point}\NormalTok{(}\AttributeTok{size=}\DecValTok{3}\NormalTok{)}\SpecialCharTok{+}\FunctionTok{geom\_text}\NormalTok{(}\FunctionTok{aes}\NormalTok{(}\AttributeTok{label=}\StringTok{""}\NormalTok{),}\AttributeTok{size=}\DecValTok{3}\NormalTok{,}\AttributeTok{nudge\_x=}\FloatTok{0.050}\NormalTok{)}\SpecialCharTok{+}\FunctionTok{labs}\NormalTok{(}\AttributeTok{title=}\StringTok{"SCATTERPLOT"}\NormalTok{,}\AttributeTok{x=}\StringTok{"Time Period"}\NormalTok{,}\AttributeTok{y=}\StringTok{"Values"}\NormalTok{)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{HomeAssignment_files/figure-latex/unnamed-chunk-9-1.pdf}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{cor}\NormalTok{(train}\SpecialCharTok{$}\NormalTok{TimePeriod, train}\SpecialCharTok{$}\NormalTok{Scale)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 0.2751963
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{cor}\NormalTok{(a1}\SpecialCharTok{$}\NormalTok{TimePeriod, a1}\SpecialCharTok{$}\NormalTok{Scale)}\CommentTok{\# for India}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 0.9465078
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\FunctionTok{cor}\NormalTok{(a2}\SpecialCharTok{$}\NormalTok{TimePeriod, a2}\SpecialCharTok{$}\NormalTok{Scale)}\CommentTok{\#for France}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## [1] 0.995885
+\end{verbatim}
+
+Regression
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\NormalTok{l1 }\OtherTok{\textless{}{-}} \FunctionTok{lm}\NormalTok{(Scale}\SpecialCharTok{\textasciitilde{}}\NormalTok{TimePeriod, a1)}
+\FunctionTok{summary}\NormalTok{(l1)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+## 
+## Call:
+## lm(formula = Scale ~ TimePeriod, data = a1)
+## 
+## Residuals:
+##        Min         1Q     Median         3Q        Max 
+## -1.255e-03 -8.884e-04 -3.359e-05  6.942e-04  2.086e-03 
+## 
+## Coefficients:
+##               Estimate Std. Error t value Pr(>|t|)    
+## (Intercept) -1.223e+00  1.118e-01  -10.93 3.06e-08 ***
+## TimePeriod   6.127e-04  5.583e-05   10.97 2.92e-08 ***
+## ---
+## Signif. codes:  0 '***' 0.001 '**' 0.01 '*' 0.05 '.' 0.1 ' ' 1
+## 
+## Residual standard error: 0.001029 on 14 degrees of freedom
+## Multiple R-squared:  0.8959, Adjusted R-squared:  0.8884 
+## F-statistic: 120.5 on 1 and 14 DF,  p-value: 2.916e-08
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#Predicted Values}
+\NormalTok{prd }\OtherTok{\textless{}{-}} \FunctionTok{predict}\NormalTok{(l1)}
+\NormalTok{prd}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##            1            2            3            4            5            6 
+## 0.0025684612 0.0031811719 0.0037938827 0.0044065935 0.0050193042 0.0056320150 
+##            7            8            9           10           11           12 
+## 0.0062447257 0.0068574365 0.0074701472 0.0080828580 0.0086955688 0.0093082795 
+##           13           14           15           16 
+## 0.0001176182 0.0007303289 0.0013430397 0.0019557504
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#Confirming the Predicted Values}
+\FunctionTok{head}\NormalTok{(a1)}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##   ReferenceArea TimePeriod ObservationValue       Scale
+## 1         India       2000     161987800000 0.002541611
+## 2         India       2001     170381500000 0.002673310
+## 3         India       2002     180881600000 0.002838059
+## 4         India       2003     200863400000 0.003151577
+## 5         India       2004     241172400000 0.003784032
+## 6         India       2005     299325800000 0.004696470
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#Error Values}
+\NormalTok{er }\OtherTok{\textless{}{-}}\NormalTok{ a1}\SpecialCharTok{$}\NormalTok{Scale }\SpecialCharTok{{-}}\NormalTok{ prd}
+\NormalTok{er}
+\end{Highlighting}
+\end{Shaded}
+
+\begin{verbatim}
+##             1             2             3             4             5 
+## -2.684977e-05 -5.078619e-04 -9.558241e-04 -1.255017e-03 -1.235272e-03 
+##             6             7             8             9            10 
+## -9.355454e-04 -8.726668e-04 -6.695838e-04 -4.032260e-05  2.394116e-04 
+##            11            12            13            14            15 
+##  1.040727e-03  2.085993e-03  1.280937e-03  9.346030e-04  6.140168e-04 
+##            16 
+##  3.032557e-04
+\end{verbatim}
+
+\begin{Shaded}
+\begin{Highlighting}[]
+\CommentTok{\#Scatter plot for India with Regression Line}
+\FunctionTok{ggplot}\NormalTok{(a1, }\FunctionTok{aes}\NormalTok{(TimePeriod, Scale))}\SpecialCharTok{+}\FunctionTok{geom\_point}\NormalTok{()}\SpecialCharTok{+}\FunctionTok{geom\_smooth}\NormalTok{(}\AttributeTok{method =} \StringTok{"lm"}\NormalTok{, }\AttributeTok{formula =}\NormalTok{ y}\SpecialCharTok{\textasciitilde{}}\NormalTok{x, }\AttributeTok{col=}\StringTok{"red"}\NormalTok{, }\AttributeTok{se=}\NormalTok{F)}
+\end{Highlighting}
+\end{Shaded}
+
+\includegraphics{HomeAssignment_files/figure-latex/unnamed-chunk-10-1.pdf}
+
+\end{document}

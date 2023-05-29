@@ -1,0 +1,28 @@
+Section 1 - 12 marks
+
+Unit 1 - 4 marks
+
+IOT FEATURES AND APPLICATIONS
+M2M and IOT
+Different IOT enabling technologies
+Physical and Logical design of IOT
+
+Unit 2 - 4
+Design methodology steps
+Any 1 case study (explain)
+
+Unit 3 - 4
+Sensor Characteristics and sensor terminologies and sensor caliberation
+Actuator types and applications
+The purpose of prototype development 
+
+Section 2 - 38 marks
+
+Q.1 Smart sensors and its features
+Q.2 Sensor node and its architecture
+Q.3 Wireless sensor network
+Q.4 Concept of RFID
+Q.5 Different network configurations
+Q.6 IOT stack 
+Q.7 Protocols - 802.15.4 , ZigBee and MQTT
+Q.8 Cloud computing fundamentals and types of cloud

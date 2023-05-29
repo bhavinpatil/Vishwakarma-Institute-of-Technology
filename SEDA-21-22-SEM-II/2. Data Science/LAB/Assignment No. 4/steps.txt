@@ -1,0 +1,29 @@
+1. read the data 
+2. apply regression model l1 <- lm(y~x,data)=lm(Unitsales~Price, f1)
+3. summery(l1)
+4. find multiple R-square = R^2 
+5. P-value for every independant variable.
+6. p<-plot scatter plot regression line: ggplot(f1,aes(Price,Unitsales))+geom_point()+geom_smoth(method="lm", formula=y~x, col="red",se=f)
+7. print(p)
+8. pred1 <- predict(l1) & print(pred1)
+9. er <- Unitsales - predited values
+10. print(er)
+
+
+
+1. l <- lm(Unintsales~Price+Adexp, (x) print(er).f1)
+2. print(summery(l1))	
+3. s <- dataframe(Price =(9.1,8.1), Adexp = c(52,50), ) 
+
+
+
+# Single Linear Regression:
+1. Summery
+2. Regression Line & PLot
+3. Predicted values
+4. Error Values
+
+# Multiple Liner Regression:
+1. Summery
+2. Predict values for two scenario
+
