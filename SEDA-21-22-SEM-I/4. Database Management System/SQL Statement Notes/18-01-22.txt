@@ -1,0 +1,22 @@
+Create or replace FUNCTION findMax(x IN number, y IN number)  
+RETURN number 
+IS 
+    z number; 
+BEGIN 
+   IF x > y THEN 
+      z:= x; 
+   ELSE 
+      z:= y; 
+   END IF;  
+   RETURN z; 
+End findMax;
+declare 
+a number;
+b number;
+c number;
+BEGIN 
+   a:= &Entera; 
+   b:= &enterb;  
+   c := findMax(a, b); 
+   dbms_output.put_line(' Maximum of (a,b): ' || c); 
+END; 

@@ -1,0 +1,66 @@
+--Create View
+CREATE VIEW empvu80
+AS SELECT employee_id, last_name, salary  FROM	employees
+WHERE department_id = 80; 
+
+CREATE VIEW salvu50
+AS SELECT employee_id ID_NUMBER, last_name NAME,  salary*12 ANN_SALARY
+FROM	employees
+WHERE department_id = 50;  
+Select * from salvu50;
+--Modify View
+CREATE OR REPLACE VIEW empvu80
+(id_number, name, sal, department_id)
+AS SELECT employee_id, first_name || ' ' || last_name,  salary, department_id
+FROM	employees
+WHERE department_id = 80;  
+--Create Complex View
+CREATE VIEW dept_sum_vu
+(name, minsal, maxsal, avgsal) as select
+d.department_name, MIN(e.salary),  MAX(e.salary),AVG(e.salary)  from 
+employees e, departments d where  e.department_id = d.department_id
+GROUP BY d.department_name;  
+--Denying DML Operations on View
+CREATE OR REPLACE VIEW empvu10
+(employee_number, employee_name, job_title)  AS SELECT employee_id, last_name, job_id
+FROM	employees
+WHERE	department_id = 10  WITH READ ONLY;
+DROP VIEW empvu80;  
+--Create Sequence
+CREATE SEQUENCE dept_deptid_seq
+INCREMENT BY 10
+START WITH 120
+MAXVALUE 9999  NOCACHE
+NOCYCLE;
+--View Sequence
+SELECT sequence_name, min_value, max_value,  increment_by, last_number
+FROM	user_sequences;
+--Insert values with sequence
+INSERT INTO departments(department_id,
+department_name, location_id)
+values (dept_deptid_seq.NEXTVAL,  'Support', 2500);
+--See current value of seqeunce
+SELECT dept_deptid_seq.CURRVAL  FROM	dual;
+--Modify Sequence
+ALTER SEQUENCE dept_deptid_seq
+INCREMENT BY 20
+MAXVALUE 999999  NOCACHE  NOCYCLE;
+--Dele Sequence
+DROP SEQUENCE dept_deptid_seq;  
+--Index
+CREATE INDEX emp_last_name_idx
+ON	employees(last_name);  
+--See Index
+select ic.index_name, ic.column_name,  ic.column_position col_pos,ix.uniqueness
+from user_indexes ix, user_ind_columns ic
+where ic.index_name = ix.index_name
+AND ic.table_name = 'EMPLOYEES';
+--Drop Index
+DROP INDEX upper_last_name_idx;  
+--SYNONYM
+CREATE SYNONYM d_sum
+FOR dept_sum_vu;  
+DROP SYNONYM d_sum;
+
+
+

@@ -1,0 +1,77 @@
+--create table
+create table dep08(dept_no number(10), dname varchar2(10),
+dmanager char(20),destablish date);
+Desc dep08
+--Adding Column /columns to existing table
+alter table dep08 add(dlocation varchar2(10));
+desc dept08
+alter table dep08 add(pin varchar2(10),deptphone number);
+desc 08
+--changing the size of column
+-- size can be reduced if there is not data or there is no data lost.
+-- can convert char to number if data is not present 
+-- can convert number to char
+alter table dep08 modify(pin number(10));
+--MArk column as unused so that it is not visible in select statement
+--Once Unused can't convert to use
+alter table dep08 set unused column pin;
+--only for Sysadmin
+select * from dba_unused_col_tabs where table_name='DEP08'
+--Droping unused column Autocommit
+ALTER TABLE dep08 DROP UNUSED COLUMNS;
+--Droping Column Autocommit
+alter table dep08 drop column deptphone;
+--Create table from existing table
+create table dept09 as select * from departments;
+create table dept10 as select department_id as DID, department_name as Dname from departments 
+where department_id>70
+--see the names owned by user
+select table_name from user_tables;
+-- view different object types own by user
+select distinct object_type from user_objects;
+--view tables sequence index etc own by user
+select * from user_catalog;
+--create table with constraints;
+--Column level constarints
+-- By defult is NULL
+create table dept01(did number(10) primary key, dname varchar2(10) NULL, 
+dlocation varchar2(10) not null, dman number(10) unique, 
+city varchar2(20) check(city in ('Mumbai','Pune' )));
+--Following Gives Error
+--Because on Column level constraint we can create only one PK
+create table dept02(did number(10) primary key, dname varchar2(10) Primary key) 
+--Giving Name to Constraints
+create table dept03(did number(10) constraint did_pk primary key, dlocation varchar2(10) constraint dlocation not null)
+-- See the constraints of the table
+SELECT constraint_name, constraint_type,  search_condition
+FROM user_constraints
+WHERE	table_name = 'DEPT03';
+--Foreign Key
+create table SY_D(rollno number(10)primary key, sname char(10));
+create table SY_D_Marks(Rollno number(10), Sub1 char(20) ,sub1_marks number(10),
+constraints FK Foreign key(rollno)
+references SY_D(rollno))
+
+create table SY_D_Marks1(Rollno number(10), Sub1 char(20) ,sub1_marks number(10),
+constraints FK1 Foreign key(rollno)
+references SY_D(rollno)on delete cascade )
+-- Table Level Constraints;
+create table dept13(did number(10), dname char(20), dlocation char(20), constraints PK Primary key(Did,dname), 
+constraint Uniq unique(dlocation));
+desc dept13;
+rename dept13 to dept14;
+drop table ____
+--Modifying Constraints
+ALTER TABLE	employees ADD CONSTRAINT emp_manager_fk  FOREIGN KEY(manager_id)  REFERENCES employees(employee_id);
+--Droping Constrains
+ALTER TABLE	employees DROP CONSTRAINT emp_manager_fk;  
+ALTER TABLE departments  DROP PRIMARY KEY CASCADE;
+ALTER TABLE	employees DISABLE CONSTRAINT emp_emp_id_pk CASCADE;  
+ALTER TABLE	employees  ENABLE CONSTRAINT	emp_emp_id_pk;
+ALTER TABLE test1 DROP (pk) CASCADE CONSTRAINTS;
+ALTER TABLE test1 DROP (pk, fk, col1) CASCADE CONSTRAINTS;
+--View Columns associated with constraints;
+SELECT constraint_name, column_name  FROM
+user_cons_columns where table_name='EMPLOYEES'
+
+

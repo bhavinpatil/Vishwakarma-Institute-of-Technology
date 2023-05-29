@@ -1,0 +1,36 @@
+SELECT last_name, nvl(to_char(manager_id),'No Manager') from employees;
+select last_name, commission_pct,nvl(commission_pct,0) as CP from employees;
+select last_name, salary,nvl(commission_pct,0), (salary*12), (Salary*12+nvl(commission_pct,0)) annsal from employees;
+select last_name, commission_pct, nvl2(commission_pct,'SAL+COMM','SAL') from employees;
+
+select last_name, length(last_name) ,first_name, length(first_name), 
+nullif((length(last_name)),(length(first_name))) from employees;
+
+select last_name,manager_id,commission_pct,salary, coalesce(commission_pct,manager_id,10) from employees;
+
+SELECT last_name, job_id, salary,
+		case job_id when  'IT_PROG' then 1.10*salary
+			when 'ST_CLERK' then 1.15*salary
+			when 'SA_REP' then 1.20*salary
+		else salary END "Revised Sal" from employees;
+SELECT last_name, job_id, salary,
+		decode( job_id, 'IT_PROG',1.10*salary,
+			'ST_CLERK', 1.15*salary,
+			'SA_REP' , 1.20*salary, salary) "RevisedSal"
+		 from employees;
+SELECT last_name, salary,
+		decode(trunc(salary/2000,0), 
+		0, 0.00,
+		1,0.09,
+		2,0.20,
+		3,0.30,
+		5,0.40, 0.45) "TaxRate" from employees;
+
+
+SELECT last_name, job_id, salary,commission_pct,
+		decode( commission_pct,  NULL,'No','Yes') from employees;
+SELECT last_name, job_id, salary,commission_pct,
+		case  when commission_pct IS NULL then 'No' else 'Yes' End from employees;
+
+
+

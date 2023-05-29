@@ -1,0 +1,14 @@
+After Installing Oracle Database
+Start SQL Plus(SQL command Promt)
+alter session set "_ORACLE_SCRIPT"=true;
+create user GiveUserName identified by GivePassword;
+Password doesn't content @# special character except _ same for your name
+grant all privileges to UserName
+Connect
+GiveUseName
+GivePassword
+Download File Data Population
+In Above File Press Control A and Control C (Copy All Content of File)
+Go to SQL Prompt Right Click Mouse It will paste File
+SQL> select table_name from user_tables;
+This statement gives you tables created in your username

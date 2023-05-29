@@ -1,0 +1,52 @@
+Noequijoin
+SELECT e.last_name, e.salary, j.grade
+FROM employees e, job_grades j  WHERE e.salary
+BETWEEN j.lowest_sal AND j.highest_sal
+
+
+Outer Join
+select e.employee_id,e.last_name,e.department_id,d.department_id, d.department_name  FROM employees e, departments d
+where e.department_id=d.department_id(+) order by e.employee_id
+
+Self Join
+select e.employee_id,e.last_name,e.department_id,m.department_id as ManagerT, m.salary ManagerTSal 
+FROM employees e, employees m 
+where e.employee_id=m.employee_id order by e.employee_id
+
+SELECT worker.last_name || ' works for '
+|| manager.last_name
+FROM employees worker, employees manager
+WHERE worker.manager_id = manager.employee_id
+Cross
+SELECT locations.location_id, department_name,street_address  
+FROM departments cross join locations
+
+
+Natural Join
+SELECT department_id, department_name,  location_id, city
+FROM departments
+Natural join locations
+
+SELECT e.employee_id, e.last_name, d.location_id
+from employees e join departments d Using (department_id)
+
+SELECT e.employee_id, e.last_name, e.department_id,  d.department_id, d.location_id
+FROM employees e JOIN departments d
+ON	(e.department_id = d.department_id);
+
+SELECT e.employee_id, e.last_name, e.department_id,  d.department_id, d.location_id
+FROM employees e JOIN departments d
+ON	(e.department_id = d.department_id)
+JOIN locations l
+ON	d.location_id = l.location_id;
+
+
+SELECT e.last_name, e.department_id, d.department_name  FROM employees e
+Left OUTER JOIN departments d
+ON (e.department_id = d.department_id)
+
+SELECT e.last_name, e.department_id, d.department_name  FROM employees e
+Right OUTER JOIN departments d
+ON (e.department_id = d.department_id)
+
+
